@@ -1,0 +1,22 @@
+.credits-container {
+  background-color: #252222;
+  padding: 20px;
+}
+
+.credit-item {
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.credit-image {
+  width: 100px; /* Adjust image size */
+  height: 150px; /* Adjust image size */
+  border-radius: 10px;
+  margin: 0 auto 10px;
+}
+
+.credit-name {
+  margin: 0;
+  font-size: 14px;
+}

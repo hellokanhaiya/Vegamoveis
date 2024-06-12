@@ -1,0 +1,209 @@
+body,
+html {
+  background-color: black;
+}
+.container-vegamovies {
+  width: 86%;
+  margin: auto;
+}
+.bg-color {
+  background-color: #505453;
+}
+.navbar li:hover {
+  background-color: #404040;
+}
+.search-boxshodow {
+  box-shadow: inset 0 0 4px 0 hsla(0, 0%, 100%, 0.412);
+  outline: none;
+}
+.search-icon-box-shodow {
+  box-shadow: 0 7px -2px #fff;
+}
+.Social-media-icon {
+  align-items: center;
+  background: linear-gradient(180deg, #6a7574 20%, #0d0a06);
+  box-shadow: 0 9px 14px -7px #fff;
+  box-sizing: content-box;
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+}
+.catorgy-button {
+  align-items: center;
+  background: linear-gradient(180deg, #b5c3ed 18%, #06f7f7);
+  border: none;
+  border-radius: 10px;
+  color: #5c5c5c;
+  cursor: pointer;
+  display: flex;
+  font-size: 11.3px;
+  font-weight: 800;
+  margin: 4px -8px -4px 8px;
+  min-width: 50px;
+  outline: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.social-button {
+  background: #ec00dd;
+  box-shadow: 0 5px 14px -7px #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 4px;
+  padding: 10px 24px;
+  text-transform: uppercase;
+}
+.movie-content {
+  background-color: #282c34;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat, sans-serif;
+  margin: 15px 5px;
+  padding: 5px;
+  position: relative;
+  width: 200px;
+}
+.move-right-top {
+  background-color: #3f51b5;
+  color: #fff;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  height: 20px;
+  justify-content: center;
+  line-height: 1;
+  min-width: 20px;
+  padding: 0 6px;
+  position: absolute;
+  transition: -webkit-transform 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    -webkit-transform 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  z-index: 1;
+}
+.first-sapn {
+  display: inline-flex;
+  flex-shrink: 0;
+  position: relative;
+  vertical-align: middle;
+  position: absolute;
+  top: -7px;
+  left: 174px;
+}
+.random:first-child {
+  display: flex;
+}
+.credit-images {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.width-full {
+  width: 100% !important;
+  background: rgba(0, 0, 0, 0.91);
+}
+@media screen and (max-width: 768px) {
+  body,
+  .container-vegamovies {
+    /* background-color: lightgreen; */
+    width: 100%;
+  }
+  .logo-items {
+    justify-content: space-between;
+  }
+  .navbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cursor-pointer {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .search-input-box {
+    display: none;
+  }
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+  z-index: 999;
+}
+.search-input {
+  width: 100%;
+  background-color: #484c4b;
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 0 4px 0 hsla(0, 0%, 100%, 0.412);
+  color: inherit;
+  flex: 1 0 auto;
+
+  outline: none;
+  padding: 17px 14px;
+}
+.search-input-box {
+  background: #484c4b;
+  width: 100%;
+  line-height: 54px;
+  box-shadow: inset 0 0 4px 0 hsla(0, 0%, 100%, 0.412);
+  padding: 0px 13px;
+  outline: none;
+  color: white;
+}
+.search-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.search-box-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-box {
+  width: 300px; /* Adjust width as needed */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.search-box.show {
+  opacity: 1;
+}
+.no-result {
+  display: none;
+}
+.f {
+  display: none;
+}
+.k {
+  display: none;
+}
